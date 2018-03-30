@@ -18,3 +18,8 @@ body {
 a:hover {
   text-decoration: none;
 }
+
+.btn {
+    border: 0 none;
+	font-size: 15px;
+}
