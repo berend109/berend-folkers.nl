@@ -5,10 +5,6 @@ body {
 #First-Header {
 	color: black;
 	text-align: center;
-}
-
-#wed-link {
-	text-decoration: none;
 }	
 	
 #main-picture {
@@ -19,3 +15,6 @@ body {
 	box-shadow: 10px 10px 5px grey
 }
 
+a:hover {
+  text-decoration: none;
+}
