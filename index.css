@@ -28,14 +28,13 @@ a:hover {
 
 #content {
 	text-align: center;
-  padding-top: 20px;
   border-color: #000;
   border-width: 3px;
   border-style: solid;
   background-color: #676767;
 }
 
-#skills {
+#skills-bottom {
   margin-bottom: 2.5rem;
 }
 
