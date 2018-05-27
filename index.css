@@ -22,10 +22,6 @@ a:hover {
   text-decoration: none;
 }
 
-#mail {
-	color: black;
-}
-
 #content {
 	text-align: center;
   border-color: #000;
@@ -35,7 +31,12 @@ a:hover {
 }
 
 #skills-bottom {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.7rem;
+}
+
+#skills {
+  text-align: justify;
+  margin-left: 17.5%;
 }
 
 .card {
@@ -43,7 +44,11 @@ a:hover {
   max-height: 25rem;
 }
 
-.btn:focus, .btn:active {
+.btn{
   outline: none !important;
   box-shadow: none !important;
+  background-color: #676767;
+  color: black;
+  border: 2px solid black;
+  text-align: center;
 }
