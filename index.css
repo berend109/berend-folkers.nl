@@ -1,5 +1,6 @@
+
 body {
-    background-color: #262626;
+    background-color: #e2ede1;
 }
 
 #card-header {
@@ -27,7 +28,7 @@ a:hover {
   border-color: #000;
   border-width: 3px;
   border-style: solid;
-  background-color: #676767;
+  background-color: #81bd57;
 }
 
 #skills-bottom {
@@ -47,7 +48,7 @@ a:hover {
 .btn{
   outline: none !important;
   box-shadow: none !important;
-  background-color: #676767;
+  background-color: #81bd57;
   color: black;
   border: 2px solid black;
   text-align: center;
