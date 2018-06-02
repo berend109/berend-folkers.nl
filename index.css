@@ -1,6 +1,6 @@
 
 body {
-    background-color: #e2ede1;
+  background-color: #e2ede1;
 }
 
 #card-header {
@@ -13,7 +13,7 @@ body {
 
 #main-picture {
     height: 150px;
-    align: center;
+    box-align: center;
 }
 
 #First-Header {
