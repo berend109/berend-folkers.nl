@@ -1,14 +1,11 @@
 
 body {
-  background-color: #e2ede1;
+  background-image: url(img/background1.jpg);
 }
 
 #card-header {
 	color: black;
 	text-align: center;
-  border-color: #000;
-  border-width: 2px;
-  border-style: solid;
 }
 
 #main-picture {
