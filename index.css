@@ -1,11 +1,15 @@
 
 body {
-  background-image: url(img/background1.jpg);
+  background-image: url("img/background1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  position: center;
 }
 
 #card-header {
-	color: black;
-	text-align: center;
+  text-align: center;
+  background-color: #f0f0f043;
 }
 
 #main-picture {
@@ -26,16 +30,7 @@ a:hover {
   border-color: #000;
   border-width: 2px;
   border-style: solid;
-  background-color: #81bd57;
-}
-
-#skills-bottom {
-  margin-bottom: 2.7rem;
-}
-
-#skills {
-  text-align: justify;
-  margin-left: 17.5%;
+  background-color: #f0f0f090;
 }
 
 .card {
@@ -46,9 +41,9 @@ a:hover {
 .btn{
   outline: none !important;
   box-shadow: none !important;
-  background-color: #81bd57;
+  background-color: f0f0f043;
   color: black;
-  border: 1.5px solid black;
+  border: 2px solid black;
   text-align: center;
 }
 
@@ -62,7 +57,6 @@ a:hover {
   box-shadow: none !important;
   background-color: #81bd57;
   color: black;
-  border: 1.5px solid black;
   text-align: center;
 }
 
