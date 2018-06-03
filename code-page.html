@@ -31,16 +31,14 @@
 
 						<div class="card-img-overlay">
 
-							<a href="http://www.berend-folkers.nl/">
-								<h1 id="First-Header">Berend-Folkers.nl</h1>
-							</a>
+                            <a href="http://www.berend-folkers.nl/" id= "home-link">Berend-Folkers.nl</a>
+    
+                        </div>
 
-						</div>
-
-						<div class="dropdown float-right">
-							<button class="btn">some other stuff</button>
+						<div class="dropdown float-right" id="clickme">
+							<button class="btn"  id="clickme">some other stuff</button>
 								<div class="dropdown-content">
-									<a href="code-page.html">Code</a>
+									<a href="code-page.html">Some of my code</a>
 								</div>
 						</div>
 
@@ -85,6 +83,12 @@
             </div>
         </div>
     </div>
+
+    <script>
+        $('#clickme').click(function (e) {
+            e.stopPropagation()
+        });
+    </script>
 
 </body>
 </html>
