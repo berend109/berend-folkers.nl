@@ -26,11 +26,15 @@ a:hover {
 }
 
 #content {
-	text-align: center;
+  text-align: center;
   border-color: #000;
   border-width: 2px;
   border-style: solid;
   background-color: #f0f0f090;
+}
+
+p {
+  margin-top: 1%;
 }
 
 .card {
