@@ -98,3 +98,7 @@ p {
   background-color: #9bd698;
   transform: scale(1.05);
 }
+
+.card-footer {
+  background-color: rgba(0, 0, 0, 0.2);
+}
