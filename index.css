@@ -102,3 +102,10 @@ p {
 .card-footer {
   background-color: rgba(0, 0, 0, 0.2);
 }
+
+/* Let Berend-Folkers tag disapear with certain screen width */
+@media screen and (max-width: 1000px) {
+  #home-link {
+    display: none !important;
+  }
+}
