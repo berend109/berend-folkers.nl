@@ -1,0 +1,111 @@
+
+body {
+  background-image: url("../img/background1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  position: center;
+}
+
+#card-header {
+  text-align: center;
+  background-color: #f0f0f043;
+}
+
+#main-picture {
+    height: 150px;
+    box-align: center;
+}
+
+#home-link {
+  color: black;
+  font-size: 50px;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+#content {
+  text-align: center;
+  border-color: #000;
+  border-width: 2px;
+  border-style: solid;
+  background-color: #f0f0f090;
+}
+
+p {
+  margin-top: 1%;
+}
+
+.card {
+  margin-bottom: 1rem;
+}
+
+.btn{
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: #8c8c8c;
+  color: black;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #9bd698;
+  transform: scale(1.05);
+}
+
+.dropbtn {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: #81bd57;
+  color: black;
+  text-align: center;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 200px;
+  box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #9bd698;
+  transform: scale(1.05);
+}
+
+.card-footer {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Let Berend-Folkers tag disapear with certain screen width */
+@media screen and (max-width: 1000px) {
+  #home-link {
+    display: none !important;
+  }
+}
