@@ -20,7 +20,7 @@
         echo "<br>";
         echo "<br>";
         echo "<br>";
-        echo "<a href='../../../index.html'>Go back</a>"; //TODO: make this more hufter proof. (maybe) 
+        echo "<a href='../../index.html'>Go back</a>"; //TODO: make this more hufter proof. (maybe) 
     };
     
 ?>
