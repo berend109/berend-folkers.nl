@@ -1,6 +1,8 @@
 
 <?php
 
+    echo '<link rel="shortcut icon" href="../../../../../../../img/FaviconIMG.jpg">';
+
     $servername = 'localhost';
     $username = 'root';
     $password = '';
