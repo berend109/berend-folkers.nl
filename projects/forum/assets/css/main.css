@@ -9,6 +9,11 @@ p {
 }
 
 a {
-    font-size: 50px;
-    text-decoration: none;
+    font-size: 30px;
+}
+
+.row {
+    width: 75%;
+    text-align: center;
+    margin: auto;
 }
