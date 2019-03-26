@@ -12,7 +12,6 @@ class connection {
         $this -> password = '';
         $this -> dbname = 'dbase';
     }
-    
 }
 
 ?>
