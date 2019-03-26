@@ -2,13 +2,13 @@
     
     require 'Connection.php';
 
-    $mail = $_POST['mail'];
+    $username = $_POST['username'];
     $pswd = $_POST['pswd'];
 
     echo '<br>';
     echo '<br>';
-    echo 'mail = ';
-    echo $mail;
+    echo 'username = ';
+    echo $username;
     echo '<br>';
     echo '<br>';
     echo 'pswd = ';
