@@ -2,5 +2,4 @@
     
     require 'Connection.php';
     
-
 ?>
