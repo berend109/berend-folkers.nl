@@ -1,17 +1,18 @@
-<?php
+ <?php
 
-class connection {
-    protected $servername;
-    protected $username;
-    protected $password;
-    protected $dbname;
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
 
-    function Dbconfig() {
-        $this -> servername = 'localhost';
-        $this -> username = 'root';
-        $this -> password = '';
-        $this -> dbname = 'dbase';
+    try {
+    $conn = new PDO("mysql:host=$servername;dbname=database", $username, $password);
+
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        echo "Connected successfully";
     }
-}
+    catch(PDOException $e)
+    {
+        echo "Connection failed: " . $e->getMessage();
+    }
 
 ?>
