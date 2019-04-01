@@ -10,7 +10,7 @@ class Connection {
 
     public function connect() {
         $this->servername = "localhost";
-        $this->username = "roo";
+        $this->username = "root";
         $this->password = "";
         $this->dbname = "database";
         $this->charset = "utf8mb4";
