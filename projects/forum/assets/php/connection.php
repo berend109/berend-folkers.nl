@@ -16,7 +16,8 @@ class connection {
         $this->charset = "utf8mb4";
 
         try {
-            $dsn = "mysql:host=".$this->servername.";dbname=".$this->dbname.";charset=".$this->charset;
+            $dsn = "mysql:host=".$this->servername.";dbname=".$this->dbname.
+            ";charset=".$this->charset; // extends from line 19
             $pdo = new PDO($dsn, $this->username, $this->password);
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             return $pdo;
@@ -25,7 +26,6 @@ class connection {
         }
         
     }
-
+    
 }
 
-?>
