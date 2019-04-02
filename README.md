@@ -2,4 +2,4 @@
 
 This page is still under construction. 
 
-as it is a little project I use for school.
+as it is a project I use for school.
