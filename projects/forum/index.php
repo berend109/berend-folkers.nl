@@ -1,5 +1,6 @@
 <?php
     include_once 'assets/php/connection.php';
+    // include_once 'assets/php/register.php';
 ?>
 
 <!DOCTYPE html>
