@@ -26,16 +26,4 @@ class connection {
 
     }
 
-    // public function register() {
-
-
-
-    // }
-
-    // public function login() {
-
-
-
-    // }
-
 }

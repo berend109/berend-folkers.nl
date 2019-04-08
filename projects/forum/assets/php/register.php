@@ -1,35 +1,41 @@
 <?php
 
 require 'connection.php';
+// session_start();
+$name = $_POST['username'];
+$pswd = $_POST['pswd'];
 
-class register {
+class register extends connection {
 
     public function register($name, $pswd) {
 
-        $name = $_POST['username'];
-        $pswd = $_POST['pswd'];
+        $con = new connection;
+        $con->connect();
 
-        $sql = "INSERT INTO persons ('name', 'PSWD')
-        VALUES ($name, $pswd)";
+        $sql = "INSERT INTO 'persons' ('name', 'PSWD') VALUES ($name, $pswd)";
 
-        if ($conn->query($sql) === true) {
-            echo "Geregistreerd";
+        if($con->query($sql) === TRUE) {
+            echo "Je bent nu geregistreerd.";
         } else {
-            echo "Error: " . $sql . "<br>" . $conn->error;
-        }$conn->close();
+            echo "Error: " . $con . "<br>" . $con->error;
+        }
 
     }
 
 }
 
-echo "\$_POST['username']";
-echo "<br />";
-echo $_POST['username'];
-echo "<br />";
-echo "<br />";
-echo "\$_POST['pswd']";
-echo "<br />";
-echo $_POST['pswd'];
-echo "<br />";
-echo "<br />";
-echo implode(" | ",$_POST);
+// echo "\$_POST['username']";
+// echo "<br />";
+// echo $_POST['username'];
+// echo "<br />";
+// echo "<br />";
+// echo "\$_POST['pswd']";
+// echo "<br />";
+// echo $_POST['pswd'];
+// echo "<br />";
+// echo "<br />";
+// echo implode(" | ",$_POST);
+// echo "<br/>";
+// echo "<br/>";
+// $con = new connection;
+// $con->connect();
