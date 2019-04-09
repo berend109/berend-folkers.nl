@@ -1,16 +1,34 @@
 <?php
 
-    require 'connection.php';
+require 'connection.php';
 
-    // echo "usrname | pswd";
-    // echo "<br/>";
-    // echo "<br/>";
-    // echo implode(" | ",$_POST);
-    // echo "<br/>";
-    // echo "<br/>"; 
+$name = $_POST['username'];
+$pswd = $_POST['pswd'];
 
-class register extends connection {
-    public function userInfo() {
-        $stmt = $this->connect()->query("SELECT * FROM users");
+class Register {
+
+    public function __construct() {
+
     }
+
+    public function register($name, $pswd) {
+
+        try {
+        $con = new connection;
+        $connection = $con->connect();
+
+        $sql = "INSERT INTO `persons` (`name`, `PSWD`) VALUES ('$name', '$pswd')";
+
+        $stmt = $connection->prepare($sql);
+        $stmt->execute();
+
+        } catch (PDOException $e) {
+            echo "Something went wrong: " . $e->getMessage();
+        }
+
+    }
+
 }
+
+$reg = new Register();
+$reg->register($name, $pswd);
