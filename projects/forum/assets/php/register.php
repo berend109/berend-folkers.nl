@@ -23,7 +23,7 @@ class Register {
 
         echo "You are now registered !!";
 
-        header( "Refresh:5; url=../../index.php", true, 303);
+        header( "Refresh:5; url=../../index.php");
 
         } catch (PDOException $e) {
             echo "Something went wrong: " . $e->getMessage();
