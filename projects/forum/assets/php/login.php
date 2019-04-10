@@ -2,6 +2,10 @@
 
 require 'connection.php';
 
+$name = $_POST['username'];
+$pswd = $_POST['pswd'];
+$pswd = md5($pswd);
+
 class login extends connection {
     
     public function login() {
@@ -11,3 +15,6 @@ class login extends connection {
     }
 
 }
+
+$login = new login();
+$login->login($name, $pswd);
