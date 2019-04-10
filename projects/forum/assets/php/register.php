@@ -4,12 +4,11 @@ require 'connection.php';
 
 $name = $_POST['username'];
 $pswd = $_POST['pswd'];
+$pswd = md5($pswd);
 
 class Register {
 
-    public function __construct() {
-
-    }
+    public function __construct() {}
 
     public function register($name, $pswd) {
 
@@ -21,6 +20,10 @@ class Register {
 
         $stmt = $connection->prepare($sql);
         $stmt->execute();
+
+        echo "You are now registered !!";
+
+        header( "Refresh:5; url=../../index.php", true, 303);
 
         } catch (PDOException $e) {
             echo "Something went wrong: " . $e->getMessage();
