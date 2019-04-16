@@ -6,10 +6,10 @@ $name = $_POST['username'];
 $pswd = $_POST['pswd'];
 $pswd = md5($pswd);
 
-class Register {
+class register {
 
     public function __construct() {}
-
+    
     public function register($name, $pswd) {
 
         try {
@@ -33,5 +33,5 @@ class Register {
 
 }
 
-$reg = new Register();
+$reg = new register();
 $reg->register($name, $pswd);

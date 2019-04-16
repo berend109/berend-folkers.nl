@@ -8,19 +8,17 @@ $pswd = md5($_POST['pswd']);
 class login extends connection {
 
     public function __construct() {}
-    
+
     public function login($name, $pswd) {
 
-        try {
-        $con = new connection;
-        $connection = $con->connect();
+        $stmt = $con->prepare("SELECT username FROM users WHERE username = :name");
+        $stmt->bindParam(':name', $username);
+        $stmt->execute();
 
-        $sql = "SELECT `name`, `PSWD` FROM `persons` WHERE `name`=? AND `PSWD`=? ";
-        $query = $connection->prepare($sql);
-        $query->execute(array($name,$pswd));
-
-        } catch (PDOException $e) {
-            echo "Something went wrong: " . $e->getMessage();
+        if($stmt->rowCount() > 0){
+            echo "exists!";
+        } else {
+            echo "non existant";
         }
 
     }
