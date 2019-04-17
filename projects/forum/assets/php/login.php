@@ -2,23 +2,29 @@
 
 require 'connection.php';
 
+$pdo = new connection;
+$con = $pdo->connect();
 $name = $_POST['username'];
-$pswd = md5($_POST['pswd']);
+$pswd = $_POST['pswd'];
+// $pswd = md5($pswd);
 
-class login extends connection {
+class login {
 
     public function __construct() {}
 
-    public function login($name, $pswd) {
+    public function login($con, $name, $pswd) {
 
-        $stmt = $con->prepare("SELECT username FROM users WHERE username = :name");
-        $stmt->bindParam(':name', $username);
-        $stmt->execute();
-
-        if($stmt->rowCount() > 0){
-            echo "exists!";
+        $stmt = $con->prepare("SELECT * FROM persons WHERE name = ?");
+        $stmt->execute([$name]);
+        $user = $stmt->fetch();
+        print_r($user);
+        echo "<br>";
+        echo "<br>";
+        
+        if ($user && password_verify($pswd, $user['PSWD'])) {
+            echo 'CAN THIS WORK ??';
         } else {
-            echo "non existant";
+            echo 'NO THIS IS NOT WORKING';
         }
 
     }
@@ -26,4 +32,4 @@ class login extends connection {
 }
 
 $login = new login();
-$login->login($name, $pswd);
+$login->login($con, $name, $pswd);

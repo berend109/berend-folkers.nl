@@ -4,7 +4,7 @@ require 'connection.php';
 
 $name = $_POST['username'];
 $pswd = $_POST['pswd'];
-$pswd = md5($pswd);
+// $pswd = md5($pswd);
 
 class register {
 

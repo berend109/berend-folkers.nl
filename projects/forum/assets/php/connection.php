@@ -27,15 +27,4 @@ class connection {
 
     }
 
-    public function usrInfo() {
-        $stmt = $this->connect()->query("SELECT * FROM persons");
-        while ($row = $stmt->fetch()) {
-            $uid = $row['name'];
-            $pswd = $row['PSWD'];
-            echo ($uid);
-            echo ($pswd);
-            return $uid;
-        }
-    }
-
 }

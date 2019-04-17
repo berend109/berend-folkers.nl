@@ -87,7 +87,7 @@
                 echo "<br/>";
                 $object = new connection;
                 $object->connect();
-                $object->usrInfo();
+                // $object->usrInfo();
             ?>
         </div>
     </div>
