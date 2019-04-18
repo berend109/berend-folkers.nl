@@ -1,4 +1,7 @@
 <?php
+
+    session_start();
+
     include_once 'assets/php/connection.php';
 ?>
 
@@ -87,7 +90,6 @@
                 echo "<br/>";
                 $object = new connection;
                 $object->connect();
-                // $object->usrInfo();
             ?>
         </div>
     </div>

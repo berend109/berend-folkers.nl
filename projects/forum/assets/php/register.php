@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 require 'connection.php';
 
 $name = $_POST['username'];
