@@ -20,9 +20,11 @@ class login {
         $user = $stmt->fetch();
 
         if ($user && password_verify($pswd, $user['PSWD'])) {
-            echo 'CAN THIS WORK ??';
+            echo 'You  are loged in loading forum page for you.';
+            header( "Refresh:5; url=../../frondPage.php");
         } else {
-            echo 'NO THIS IS NOT WORKING';
+            echo 'You  put in the wrong info to log in TRY AGAIN !!';
+            header( "Refresh:5; url=../../index.php");
         }
 
     }
