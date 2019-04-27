@@ -36,35 +36,36 @@ session_start();
     
     <h1>This page is made because of a school project NEVER submit personal info.</h1>
 
-    <div class="card text-center bg-dark">
-        <div class="card-header bg-dark">
-            <ul class="nav nav-tabs card-header-tabs">
-            <li class="nav-item">
-                <a class="nav-link bg-dark" href="frondPage.php">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link bg-dark" href="#">Panel</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link bg-dark" href="#">Sign out</a>
-            </li>
-            </ul>
-        </div>
-        <div class="card-body">
-            <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
-                <div class="card-header">
-                    <?php 
-                        if(!empty($_SESSION["name"])) {
-                            print "Hello, {$_SESSION["name"]}";
-                        }else{
-                            print "You're not logged in!!";
-                        }
-                    ?>
-                </div>
+    <div class="container">
+        <div class="card text-center bg-dark">
+            <div class="card-header bg-dark">
+                <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link bg-dark" href="frondPage.php">Home</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link bg-dark" href="#">Panel</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link bg-dark" href="#">Sign out</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container" id="userInfo">
                 <div class="card-body">
-                    <h5 class="card-title">Your Info</h5>
-                    <p class="card-text"></p>
+                    <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                        <div class="card-header">
+                            <p>User</p>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Your Info</h5>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <div class="container" id="userPost">
+
             </div>
         </div>
     </div>
