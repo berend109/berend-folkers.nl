@@ -2,11 +2,7 @@
 
 session_start();
 
-if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-    echo "Welcome to the member's area, " . $_SESSION['username'] . "!";
-} else {
-    echo "Please log in first to see this page.";
-}
+print_r($_SESSION);
 
 ?>
 
@@ -46,14 +42,14 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
         <div class="card text-center bg-dark">
             <div class="card-header bg-dark">
                 <ul class="nav nav-tabs card-header-tabs">
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link bg-dark" href="frondPage.php">Home</a>
-                    </li>
+                    </li> -->
                     <!-- <li class="nav-item">
                         <a class="nav-link bg-dark" href="#">Panel</a>
                     </li> -->
                     <li class="nav-item">
-                        <a class="nav-link bg-dark" href="#">Sign out</a>
+                        <a class="nav-link bg-dark" href="assets/php/logout.php">Sign out</a>
                     </li>
                 </ul>
             </div>
