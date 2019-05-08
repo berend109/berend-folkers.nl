@@ -20,8 +20,9 @@ class login {
         $user = $stmt->fetch();
 
         if ($user && password_verify($pswd, $user['PSWD'])) {
-	    echo 'You  are logged in loading forum page for you.';
-	    $_SESSION['username'] = $_POST['username'];	
+	    	echo 'You  are logged in loading forum page for you.';
+	    	$_SESSION['username'] = $_POST['username'];
+			$_SESSION['loggedin'] = true;
             header( "Refresh:5; url=../../frondPage.php");
         } else {
             echo 'You put in the wrong info to log in TRY AGAIN !!';
