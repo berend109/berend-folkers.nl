@@ -2,7 +2,14 @@
 
 session_start();
 
-print_r($_SESSION);
+// print_r($_SESSION);
+
+if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+    echo 'Welcome !!';
+} else {
+    echo 'You are not logged in !!';
+    header("Refresh:5; url=index.php");
+}
 
 ?>
 
@@ -42,12 +49,6 @@ print_r($_SESSION);
         <div class="card text-center bg-dark">
             <div class="card-header bg-dark">
                 <ul class="nav nav-tabs card-header-tabs">
-                    <!-- <li class="nav-item">
-                        <a class="nav-link bg-dark" href="frondPage.php">Home</a>
-                    </li> -->
-                    <!-- <li class="nav-item">
-                        <a class="nav-link bg-dark" href="#">Panel</a>
-                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link bg-dark" href="assets/php/logout.php">Sign out</a>
                     </li>
@@ -57,7 +58,15 @@ print_r($_SESSION);
                 <div class="card-body">
                     <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
                         <div class="card-header">
-                            <p>User</p>
+							<p>
+							<?php
+    							if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+									echo $_SESSION['username'];
+								} else {
+									echo 'Username';
+								}
+							?>
+							</p>
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Your Info</h5>
