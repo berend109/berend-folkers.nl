@@ -2,6 +2,8 @@
 
 session_start();
 
+print_r($_SESSION);
+
 ?>
 
 <!DOCTYPE html>
@@ -40,14 +42,14 @@ session_start();
         <div class="card text-center bg-dark">
             <div class="card-header bg-dark">
                 <ul class="nav nav-tabs card-header-tabs">
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link bg-dark" href="frondPage.php">Home</a>
-                    </li>
+                    </li> -->
                     <!-- <li class="nav-item">
                         <a class="nav-link bg-dark" href="#">Panel</a>
                     </li> -->
                     <li class="nav-item">
-                        <a class="nav-link bg-dark" href="#">Sign out</a>
+                        <a class="nav-link bg-dark" href="assets/php/logout.php">Sign out</a>
                     </li>
                 </ul>
             </div>
