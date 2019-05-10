@@ -1,6 +1,5 @@
 <?php
     session_start();
-
     include_once 'assets/php/connection.php';
 ?>
 
@@ -34,8 +33,6 @@
 </head>
 
 <body>
-
-    <h1>This page is made because of a school project NEVER submit personal info.</h1>
 
     <div class="jumbotron container form-group">
         <div class="row">
