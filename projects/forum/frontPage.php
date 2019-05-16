@@ -2,10 +2,8 @@
 
 session_start();
 
-// print_r($_SESSION);
-
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-    echo 'Welcome !!';
+    
 } else {
     echo 'You are not logged in !!';
     header("Refresh:5; url=index.php");
@@ -43,8 +41,6 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 </head>
 <body>
     
-    <h1>This page is made because of a school project NEVER submit personal info.</h1>
-
     <div class="container">
         <div class="card text-center bg-dark">
             <div class="card-header bg-dark">

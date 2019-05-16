@@ -20,10 +20,9 @@ class login {
         $user = $stmt->fetch();
 
         if ($user && password_verify($pswd, $user['PSWD'])) {
-	    	echo 'You  are logged in loading forum page for you.';
 	    	$_SESSION['username'] = $_POST['username'];
 			$_SESSION['loggedin'] = true;
-            header( "Refresh:5; url=../../frondPage.php");
+            header( "Refresh:0; url=../../frontPage.php");
         } else {
             echo 'You put in the wrong info to log in TRY AGAIN !!';
             header( "Refresh:5; url=../../index.php");
@@ -33,5 +32,5 @@ class login {
 
 }
 
-$login = new login();
-$login->login($con, $name, $pswd);
+$login = new login(); // class
+$login->login($con, $name, $pswd); // function
