@@ -24,18 +24,14 @@ class register {
 
 		if ($user) {
 	    	$_SESSION['username'] = $_POST['username'];
-            			
 			echo "Username taken";
-
 			header( "Refresh:5; url=../../index.php");
-
 		} else {
 			$sql = "INSERT INTO `persons` (`name`, `PSWD`) VALUES ('$name', '$pswd')";
 			$stmt = $con->prepare($sql);
 			$stmt->execute();
 			
 			echo "You are now registered !!";
-
 			header( "Refresh:5; url=../../index.php");
 		}
 
