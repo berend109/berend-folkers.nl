@@ -42,17 +42,17 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 <body>
     
     <div class="container">
-        <div class="card text-center bg-dark">
-            <div class="card-header bg-dark">
+        <div class="card text-center">
+            <div class="card-header">
                 <ul class="nav nav-tabs card-header-tabs">
                     <li class="nav-item">
-                        <a class="nav-link bg-dark" href="assets/php/logout.php">Sign out</a>
+                        <a class="nav-link" href="assets/php/logout.php">Sign out</a>
                     </li>
                 </ul>
             </div>
             <div class="container" id="userInfo">
                 <div class="card-body">
-                    <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                    <div class="card b-3" style="max-width: 18rem;">
                         <div class="card-header">
 							<p>
 							<?php
