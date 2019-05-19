@@ -1,1 +1,5 @@
-# This is the projects section at the moment there is only 1 school project in it more still to come.
+# berend-folkers.nl
+
+This page is still under construction. 
+
+In here I will upload my projects I make at school.
