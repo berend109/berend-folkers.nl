@@ -6,17 +6,11 @@ require 'connection.php';
 
 $name = $_POST['username'];
 $pswd = $_POST['pswd'];
-<<<<<<< HEAD
-$pswd = md5($pswd);
-=======
 $pswd = password_hash($pswd, PASSWORD_DEFAULT);
->>>>>>> 6ace0b0b2df88ba3973141c52ae6b081888e6006
 
 class register {
 
     public function __construct() {}
-<<<<<<< HEAD
-=======
     
     public function register($name, $pswd) {
 
@@ -27,7 +21,6 @@ class register {
 		$stmt = $con->prepare("SELECT * FROM persons WHERE name = ?");
         $stmt->execute([$name]);
         $user = $stmt->fetch();
->>>>>>> 6ace0b0b2df88ba3973141c52ae6b081888e6006
 
 		if ($user) {
 	    	$_SESSION['username'] = $_POST['username'];
