@@ -1,4 +1,5 @@
 <?php
+    session_start();
     include_once 'assets/php/connection.php';
 ?>
 
@@ -33,8 +34,6 @@
 
 <body>
 
-    <h1>This page is made because of a school project NEVER submit personal info.</h1>
-
     <div class="jumbotron container form-group">
         <div class="row">
             <div class="col-sm-6">
@@ -65,18 +64,10 @@
                                 <label for="exampleInputName">Username</label>
                                 <input name="username" type="text" class="form-control" placeholder="Username">
                             </div>
-                            <!-- <div class="form-group">
-                                <label for="exampleInputEmail1">Email</label>
-                                <input name="mail" type="email" class="form-control" placeholder="Email">
-                            </div> -->
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Password</label>
                                 <input name="pswd" type="password" class="form-control" placeholder="Password">
                             </div>
-                            <!-- <div class="form-group">
-                                <label for="exampleInputPassword2">Password</label>
-                                <input name="pswd" type="password" class="form-control" placeholder="Password">
-                            </div> -->
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </form>
                     </div>
@@ -85,8 +76,8 @@
             <?php
                 echo "<br/>";
                 echo "<br/>";
-                $object = new connection;
-                $object->connect();
+                $object = new connection; // class
+                $object->connect(); // function
             ?>
         </div>
     </div>
