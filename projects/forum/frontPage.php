@@ -63,7 +63,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                 <div class="card-header">
                                     <p>
                                         <?php
-                                            if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+                                            if (isset ($_SESSION['loggedin']) == true) {
                                                 echo $_SESSION['username'];
                                             } else {
                                                 echo 'Username';
@@ -72,8 +72,11 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                     </p>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title">Your Info</h5>
+                                    <!-- <h2 class="card-title">Your Info</h2> -->
                                     <p class="card-text"></p>
+                                    <p>Naam:</p>
+                                    <p>Datum:</p>
+                                    <p>Woonplaats:</p>
                                     <button type="button" class="btn btn-light">
                                         <i class="fas fa-sliders-h"></i>
                                     </button>
