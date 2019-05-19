@@ -35,10 +35,6 @@ class register {
 			header( "Refresh:5; url=../../index.php");
 		}
 
-        echo "You are now registered !!";
-
-        header( "Refresh:5; url=../../index.php");
-
         } catch (PDOException $e) {
             echo "Something went wrong: " . $e->getMessage();
         }
