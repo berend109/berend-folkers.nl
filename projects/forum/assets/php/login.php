@@ -4,8 +4,8 @@ session_start();
 
 require 'connection.php';
 
-$pdo = new connection;
-$con = $pdo->connect();
+$pdo = new connection; // class
+$con = $pdo->connect(); // function
 $name = $_POST['username'];
 $pswd = $_POST['pswd'];
 
