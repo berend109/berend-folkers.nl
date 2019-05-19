@@ -4,6 +4,8 @@ session_start();
 
 require 'connection.php';
 
+$pdo = new connection; // class
+$con = $pdo->connect(); // function
 $name = $_POST['username'];
 $pswd = $_POST['pswd'];
 $pswd = password_hash($pswd, PASSWORD_DEFAULT);
@@ -12,12 +14,9 @@ class register {
 
     public function __construct() {}
     
-    public function register($name, $pswd) {
+    public function register($con, $name, $pswd) {
 
         try {		
-		$pdo = new connection; // class
-		$con = $pdo->connect(); // function
-		
 		$stmt = $con->prepare("SELECT * FROM persons WHERE name = ?");
         $stmt->execute([$name]);
         $user = $stmt->fetch();
@@ -44,4 +43,4 @@ class register {
 }
 
 $reg = new register(); // class
-$reg->register($name, $pswd); // function
+$reg->register($con, $name, $pswd); // function
