@@ -35,8 +35,13 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
 
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" 
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
     <!-- Custom Stylesheets -->
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/frontPage.css">
 
 </head>
 <body>
@@ -50,29 +55,39 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                     </li>
                 </ul>
             </div>
-            <div class="container" id="userInfo">
-                <div class="card-body">
-                    <div class="card b-3" style="max-width: 18rem;">
-                        <div class="card-header">
-							<p>
-							<?php
-    							if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-									echo $_SESSION['username'];
-								} else {
-									echo 'Username';
-								}
-							?>
-							</p>
-                        </div>
+            <div class="container">
+                <div class="row">
+                    <div class="container col-4" id="userInfo">
                         <div class="card-body">
-                            <h5 class="card-title">Your Info</h5>
-                            <p class="card-text"></p>
+                            <div class="card b-3" style="max-width: 18rem;">
+                                <div class="card-header">
+                                    <p>
+                                        <?php
+                                            if (isset ($_SESSION['loggedin']) == true) {
+                                                echo $_SESSION['username'];
+                                            } else {
+                                                echo 'Username';
+                                            }
+                                        ?>
+                                    </p>
+                                </div>
+                                <div class="card-body">
+                                    <!-- <h2 class="card-title">Your Info</h2> -->
+                                    <p class="card-text"></p>
+                                    <p>Naam:</p>
+                                    <p>Datum:</p>
+                                    <p>Woonplaats:</p>
+                                    <button type="button" class="btn btn-light">
+                                        <i class="fas fa-sliders-h"></i>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <div class="container col-8" id="userPost">
+                        <p>testing</p>
+                    </div>
                 </div>
-            </div>
-            <div class="container" id="userPost">
-
             </div>
         </div>
     </div>
