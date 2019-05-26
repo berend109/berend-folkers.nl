@@ -86,22 +86,21 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                     </div>
                     <div class="container col-8" id="userPost">
                         <div class="card-body">
-                            <div class="card b-3">
-                                <div class="card-header">
-                                    <p>message</p>
+                            <form>
+                                <div class="card b-3">
+                                    <div class="card-header">
+                                        <p>message</p>
+                                    </div>
+                                    <div class="card-body">
+                                        <textarea class="form-control" rows="5"></textarea>
+                                    </div>
+                                    <div id="messageSubmit">
+                                        <div>
+                                            <button type="button" class="btn btn-primary">Submit</button>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="card-body">
-                                    <textarea class="form-control" rows="5"></textarea>
-                                </div>
-								<div class="row" id="messageSubmit">
-									<div>
-										<button type="button" class="btn btn-primary">Submit</button>
-									</div>
-									<div>
-										
-									</div>
-								</div>
-							</div>
+                            </form>
                         </div>
                     </div>
                 </div>
