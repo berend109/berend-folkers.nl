@@ -93,12 +93,15 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                 <div class="card-body">
                                     <textarea class="form-control" rows="5"></textarea>
                                 </div>
-								<button type="button" class="btn btn-primary" id="messageSubmit">Submit</button>
-								<!--<div class="custom-control custom-switch">
-									<input type="checkbox" class="custom-control-input" id="switch1">
-									<label class="custom-control-label" for="switch1">Privacy</label>
-								</div>-->
-                            </div>
+								<div class="row" id="messageSubmit">
+									<div>
+										<button type="button" class="btn btn-primary">Submit</button>
+									</div>
+									<div>
+										
+									</div>
+								</div>
+							</div>
                         </div>
                     </div>
                 </div>
