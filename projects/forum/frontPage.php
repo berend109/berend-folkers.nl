@@ -3,7 +3,6 @@
 session_start();
 
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-    
 } else {
     echo 'You are not logged in !!';
     header("Refresh:5; url=index.php");
