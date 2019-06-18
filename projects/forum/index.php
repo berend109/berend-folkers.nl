@@ -9,7 +9,7 @@
 <head>
     <title>Forum</title>
 
-    <!--Favicon Image-->
+    <!-- Favicon Image -->
     <link rel="icon" href="assets/img/FaviconIMG.jpg" type="image/gif" sizes="16x16">
 
     <!-- Stylesheets (Bootstrap) -->
@@ -23,7 +23,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-    <!-- Fonts (Bootstrap + Google)-->
+    <!-- Fonts (Bootstrap + Google) -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
