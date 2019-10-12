@@ -24,8 +24,8 @@ class login {
 			$_SESSION['loggedin'] = true;
             header( "Refresh:0; url=../../frontPage.php");
         } else {
-            echo 'You put in the wrong info to log in TRY AGAIN !!';
-            header( "Refresh:5; url=../../index.php");
+            echo 'wrong password or username 
+                <a href="../../index.php">TRY AGAIN !!</a>';
         }
 
     }

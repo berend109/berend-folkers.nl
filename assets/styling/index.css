@@ -6,11 +6,6 @@ body {
   position: center;
 }
 
-#card-header {
-  text-align: center;
-  background-color: #f0f0f043;
-}
-
 #main-picture {
   height: 150px;
   box-align: center;
@@ -26,12 +21,21 @@ a:hover {
   color: black;
 }
 
+#header {
+  border-color: #000;
+  border-width: 2px;
+  border-style: solid;
+  background-color: #f0f0f090;
+  text-align: center;
+}
+
 #content {
   text-align: center;
   border-color: #000;
   border-width: 2px;
   border-style: solid;
   background-color: #f0f0f090;
+  margin-bottom: 10%;
 }
 
 p {
