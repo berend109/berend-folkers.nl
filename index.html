@@ -22,21 +22,16 @@
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
 	<!--css file-->
-	<link rel="stylesheet" type="text/css" href="./assets/styling/index.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/index.css">
 </head>
 
-<body>
+<body onload="homeFunc()">
 	<div class="card-body">
 		<div class="container">
 			<div class="col">
 				<div class="card" id="header">
 					<div id="card" div class="card-header rounded">
-						<img id="main-picture" src="./assets/img/main-picture.jpg" alt="Foto van mezelf."
-							class="float-start">
-
-						<div class="card-img-overlay">
-							<a href="./index.html" id="home-link" title="Home page">Berend Folkers.nl</a>
-						</div>
+						<a href="./" id="home-link" title="Home page">Berend Folkers.nl</a>
 					</div>
 				</div>
 			</div>
@@ -47,23 +42,23 @@
 				<div class="card" id="menu">
 					<ul class="nav justify-content-center">
 						<li class="nav-item">
-							<a class="nav-link" href="#">
-								<button type="button" class="btn">Home</button>
+							<a class="nav-link">
+								<button onclick="homeFunc()" type="button" class="btn">Home</button>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">
-								<button type="button" class="btn">Projecten</button>
+							<a class="nav-link">
+								<button onclick="projectFunc()" type="button" class="btn">Projecten</button>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">
-								<button type="button" class="btn">Social</button>
+							<a class="nav-link">
+								<button onclick="socialFunc()" type="button" class="btn">Social</button>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">
-								<button type="button" class="btn">Ervaring</button>
+							<a class="nav-link">
+								<button onclick="experienceFunc()" type="button" class="btn">Ervaring</button>
 							</a>
 						</li>
 					</ul>
@@ -74,9 +69,7 @@
 		<div class="container">
 			<div class="col">
 				<div class="card" id="content">
-					<p>
-						Work in progress
-					</p>
+					<p id="mainText"></p>
 				</div>
 			</div>
 		</div>
@@ -97,6 +90,12 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
 	</script>
+
+	<script src="./assets/js/index.js"></script>
+	<script src="./assets/js/home.js"></script>
+	<script src="./assets/js/project.js"></script>
+	<script src="./assets/js/social.js"></script>
+	<script src="./assets/js/experience.js"></script>
 
 </body>
 
