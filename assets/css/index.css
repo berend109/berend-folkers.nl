@@ -1,56 +1,16 @@
 body {
-	background-image: url("../img/background1.jpg");
+	/* background-image: url("../img/background1.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
-	position: center;
+	position: center; */
+
+	background-color: #545454;
 }
 
-/* page title in header */
-#home-link {
-	color: black;
-	font-size: 50px;
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: none;
-	color: black;
-}
-
-/* header styling  */
-#header {
-	border-color: #000;
-	border-width: 2px;
-	border-style: solid;
-	background-color: #f0f0f090;
-	text-align: center;
-}
-
-/* menu styling */
-#menu {
-	border-color: #000;
-	border-width: 2px;
-	border-style: solid;
-	background-color: #f0f0f090;
-}
-
-/* content styling */
-#content {
-	text-align: center;
-	border-color: #000;
-	border-width: 2px;
-	border-style: solid;
-	background-color: #f0f0f090;
-	margin-bottom: 10%;
-}
-
-p {
-	margin-top: 1%;
-}
-
-.card {
-	margin-bottom: 1rem;
+/* footer */
+.card-footer {
+	background-color: rgba(0, 0, 0, 0.2);
 }
 
 /* button styling */
@@ -60,11 +20,6 @@ p {
 }
 
 .btn:hover {
-	background-color: #9bd698;
-	transform: scale(1.05);
-}
-
-/* footer */
-.card-footer {
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: #a7a7a7;
+	transform: scale(1.10);
 }
