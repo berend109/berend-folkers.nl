@@ -1,0 +1,200 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	background: #ad8667 url('../img/bg.jpg');
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+	margin: 0;
+}
+
+p, ol, ul {
+	margin-top: 0;
+}
+
+ol, ul {
+	padding: 0;
+	list-style: none;
+}
+
+p {
+	line-height: 180%;
+}
+
+.container {
+	margin: 0 auto;
+	width: 1200px;
+}
+
+/*********************************************************************************/
+/* List Styles                                                                   */
+/*********************************************************************************/
+
+ul.style1 {
+	margin: 0;
+	padding: 0 0 0 0;
+	overflow: hidden;
+	list-style: none;
+	color: #6c6c6c
+}
+
+ul.style1 h3 {
+	padding: 1.2em 0 1em 0;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	font-weight: 600;
+	color: #454445;
+}
+
+/* breakline style in list */
+ul.style1 li {
+	overflow: hidden;
+	display: block;
+	padding: 2.80em 0;
+	border-top: 1px solid #D1CFCE;
+}
+
+ul.style1 li:first-child {
+	padding-top: 0;
+	border-top: none;
+}
+
+/*********************************************************************************/
+/* Heading Titles                                                                */
+/*********************************************************************************/
+
+.title {
+	margin-bottom: 3em;
+}
+
+.title h2 {
+	font-weight: 400;
+	font-size: 2.8em;
+	color: #323232;
+}
+
+.title .byline {
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 1.1em;
+	color: #6F6F6F;
+}
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+#header {
+	position: relative;
+	height: 100px;
+}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+#logo {
+	position: absolute;
+	top: 1em;
+}
+
+#logo h1 {
+	font-size: 2.5em;
+	text-transform: uppercase;
+}
+
+#logo a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+/*********************************************************************************/
+/* Menu                                                                          */
+/*********************************************************************************/
+
+#menu {
+	position: absolute;
+	right: 0px;
+	top: 0;
+}
+
+#menu ul {
+	display: inline-block;
+}
+
+#menu li {
+	display: block;
+	float: left;
+	text-align: center;
+}
+
+#menu li a, #menu li span {
+	display: block;
+	padding: 0 1.5em;
+	height: 100px;
+	letter-spacing: 0.20em;
+	line-height: 100px;
+	text-decoration: none;
+	font-size: 0.90em;
+	font-weight: 600;
+	text-transform: uppercase;
+	outline: 0;
+}
+
+#menu .current_page_item a {
+	background: #32251B;
+	color: #FFFFFF;
+}
+
+/*********************************************************************************/
+/* Page                                                                          */
+/*********************************************************************************/
+
+#page {
+	overflow: hidden;
+	background-color: #FFF;
+	border-top: 20px solid #32251B;
+	margin-bottom: 10em;
+}
+
+/*********************************************************************************/
+/* Content                                                                       */
+/*********************************************************************************/
+
+#content {
+	float: left;
+	width: 500px;
+	padding: 50px;
+	background-color: #F3F3F3;
+}
+
+/*********************************************************************************/
+/* Sidebar                                                                       */
+/*********************************************************************************/
+
+#sidebar {
+	float: right;
+	width: 500px;
+	padding: 50px;
+}
+
+/*********************************************************************************/
+/* One Column                                                                    */
+/*********************************************************************************/
+
+#onecolumn {
+	margin-top: 4em;
+}
+
+#onecolumn .title {
+	margin-bottom: 1em;
+}
+
+#onecolumn .title h2 {
+	font-size: 1.8em;
+}
